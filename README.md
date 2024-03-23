@@ -92,3 +92,42 @@ Evaluation Metrics: Precision, recall, RMSE for recommendation system performanc
 
 ## Conclusion
 The Yelp Recommendation System demonstrates the application of collaborative filtering and machine learning techniques for personalized business recommendations. By leveraging Spark RDD and PySpark libraries, the system efficiently processes large-scale datasets to generate accurate predictions. The hybrid approach further enhances recommendation quality, providing users with tailored suggestions based on their preferences and past interactions.
+
+# Improvement
+
+ The goal is to improve the performance of the recommendation system developed earlier. The primary focus is on increasing the prediction accuracy and efficiency using any method, such as hybrid recommendation systems. 
+
+## Methodology Description:
+I implemented a collaborative filtering recommendation system using a combination 
+of user-based and item-based approaches. The key models employed are XGBoostRegressor 
+for rating predictions and a weighted average approach for aggregation.
+
+## Model Improvement:
+1. Hyperparameter Tuning:
+   I optimized the XGBoostRegressor by performing a randomized search 
+   over a range of hyperparameters. This involved iterating through various 
+   combinations to identify the set that minimizes RMSE and enhancing the 
+   model's performance.
+
+2. Feature Enrichment:
+   To augment the model's predictive power, I incorporated additional features 
+   from user.json and business.json datasets. These features include fans, friends, 
+   yelping_years, and various compliment categories for users, as well as business-related 
+   attributes such as total_hours, is_open, latitude, and longitude. The inclusion of 
+   these features significantly improved the efficiency of the recommendation system.
+
+Overall, the combination of hyperparameter tuning and feature enrichment contributed 
+to a more accurate and efficient collaborative filtering model for predicting user ratings. 
+
+The incorporation of hybrid recommendation systems and feature enrichment further enhances recommendation quality, offering users tailored suggestions based on their preferences and past interactions.
+
+Error distribution:
+>=0 and <1: 101857
+>=1 and <2: 33300
+>=2 and <3: 6116
+>=3 and <4: 771
+>=4: 0
+
+RMSE: 0.9780393799890853
+
+Execution time: 1342.943686246872 seconds
