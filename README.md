@@ -4,9 +4,13 @@
 The Yelp Recommendation System is designed to provide personalized business recommendations to users based on their preferences and past interactions with the platform. The system employs various collaborative filtering techniques and machine learning models to generate accurate predictions.
 
 ## Technologies Used
+
 Programming Languages: Python and Scala
+
 Libraries: PySpark (RDD), XGBoost
+
 Frameworks: Apache Spark
+
 Dataset: Subset of Yelp review dataset
 
 ## Implementation
